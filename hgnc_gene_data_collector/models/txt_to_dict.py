@@ -37,9 +37,9 @@ def convert_txt_to_dict() -> list[dict]:
     with open(DATA_FILE, mode="r", newline="", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter="\t")
         
-        if not DATA_FILE.exists():
-            logger.error("HGNC data file not found at %s", DATA_FILE)
-            raise FileNotFoundError(f"HGNC data file not found at {DATA_FILE}")
+        #if not DATA_FILE.exists():
+           # logger.error("HGNC data file not found at %s", DATA_FILE)
+           # raise FileNotFoundError(f"HGNC data file not found at {DATA_FILE}")
         
     
 
@@ -60,5 +60,5 @@ def convert_txt_to_dict() -> list[dict]:
             }
             lightweight_gene_dataset.append(gene_record) # combine all gene record into one dict
         logger.info("Conversion complete. Lightweight dataset created with %d gene records.", len(lightweight_gene_dataset))
-        
-    print(lightweight_gene_dataset[10000]) # check the first record to see if it is correct
+    return lightweight_gene_dataset    
+    #print(lightweight_gene_dataset[10000]) # check the first record to see if it is correct
