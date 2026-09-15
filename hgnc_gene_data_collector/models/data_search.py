@@ -30,11 +30,32 @@ def search_by_ID(gene_id):
         dict or None: The gene record dictionary if found, else None.
     """
     logger.info("Searching for gene record with HGNC ID: %s", gene_id)
+
     for record in lightweight_gene_dataset:
-        if record["HGNC_ID"] == 
+        if record["HGNC ID"] == gene_id:
+            logger.info("Gene record found for HGNC ID: %s", gene_id)
+            gene_record = record
+            return gene_record
+
+def search_by_symbol(gene_symbol):
+    """
+    Search for a gene record in the lightweight_dataset by HGNC gene symbol.
+
+    Input:
+        gene_symbol (str): The HGNC gene symbol to search for.
     
-    
-    gene_record = next((record for record in lightweight_gene_dataset if record["HGNC ID"] == gene_id), None)
+    Returns:
+        dict or None: The gene record dictionary if found, else None.
+    """
+    logger.info("Searching for gene record with HGNC gene symbol: %s", gene_symbol
+    for record in lightweight_gene_dataset:
+        if record["HGNC gene symbol"] == gene_symbol:
+            logger.info("Gene record found for HGNC gene symbol: %s", gene_symbol)
+            gene_record = record
+            return gene_record
+
+
+
     
     if gene_record:
         logger.info("Gene record found for HGNC ID: %s", gene_id)
@@ -45,8 +66,5 @@ def search_by_ID(gene_id):
 
 
 def search_gene(request_input):
-    if request_input.startswith("HGNC"):
-        gene_record = lightweight_gene_dataset.get(request_input) # cant use this cause this is fr dict when my lightweight dataset is list of dict
-        return gene_record
-    return None
-
+    if request_input.startswith("HGNC:"):
+        request_input.strip()

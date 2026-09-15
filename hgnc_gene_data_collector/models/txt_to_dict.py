@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 
 import csv
-from settings import DATA_FILE
+from hgnc_gene_data_collector.settings import DATA_FILE
 
 def convert_txt_to_dict() -> list[dict]:
 
@@ -62,22 +62,3 @@ def convert_txt_to_dict() -> list[dict]:
         logger.info("Conversion complete. Lightweight dataset created with %d gene records.", len(lightweight_gene_dataset))
         
     print(lightweight_gene_dataset[10000]) # check the first record to see if it is correct
-
-
-
-try:
-2
-...
-3
-except FileNotFoundError:
-4
-...
-Show more lines
-
-and maybe:
-
-Python
-1
-except Exception:
-2
-...
