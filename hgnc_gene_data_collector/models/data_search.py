@@ -16,8 +16,11 @@ Output:
 """
 
 import logging
+from typing import Any, Optional #to find out type
 logger = logging.getLogger(__name__)
 from hgnc_gene_data_collector.models.txt_to_dict import convert_txt_to_dict
+
+lightweight_gene_dataset = convert_txt_to_dict()
 
 def search_by_ID(gene_id):
     """
@@ -62,7 +65,7 @@ def search_by_symbol(gene_symbol):
 
 
 
-def search_gene(request_input):
+def search_gene(request_input , dataset: list[dict]) -> Optional[dict]): 
     """
     Search for a gene record in the lightweight_dataset based on the input. 
     """
@@ -76,7 +79,6 @@ def search_gene(request_input):
         logger.warning("Invalid input format: %s", request_input)
         return None
     
-lightweight_gene_dataset = convert_txt_to_dict()
-request_input = input("Enter HGNC gene symbol or HGNC ID (e.g., HGNC:12345): ")
-print(search_gene(request_input))
 
+gene_record = search_gene(input("fs"))
+print(type(gene_record))

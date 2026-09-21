@@ -27,14 +27,14 @@ OUTPUT:
 import logging
 logger = logging.getLogger(__name__)
 
-
+# ive removed datset import and move it to app.py
 import csv
-from hgnc_gene_data_collector.settings import DATA_FILE
+from pathlib import Path
 
-def convert_txt_to_dict() -> list[dict]:
+def convert_txt_to_dict(file_path:str | Path) -> list[dict]:
 
     logger.info("Starting conversion of text file to dictionary...") 
-    with open(DATA_FILE, mode="r", newline="", encoding="utf-8") as csv_file:
+    with open(file_path, mode="r", newline="", encoding="utf-8") as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter="\t")
         
         #if not DATA_FILE.exists():
