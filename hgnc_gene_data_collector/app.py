@@ -2,10 +2,10 @@ from flask import Flask, request, render_template
 import logging
 from typing import Dict, Any, Optional
 
-from hgnc_gene_data_collector.data_collector import settings
-from hgnc_gene_data_collector.data_collector.models.data_search import search_gene
-from hgnc_gene_data_collector.data_collector.models.txt_to_dict import convert_txt_to_dict
-from hgnc_gene_data_collector.data_collector.logger import setup_logging
+from hgnc_gene_data_collector import settings
+from hgnc_gene_data_collector.models.data_search import search_gene
+from hgnc_gene_data_collector.models.txt_to_dict import convert_txt_to_dict
+from hgnc_gene_data_collector.logger import setup_logging
 
 # Application Factory
 # ---------------------------------
@@ -110,4 +110,4 @@ app: Flask = create_app()
 # -------------------------------------------------------------------
 if __name__ == "__main__":
     logging.getLogger(__name__).info("Running Flask app")
-    app.run()
+    app.run(host="0.0.0.0", port=5000, debug=True)
