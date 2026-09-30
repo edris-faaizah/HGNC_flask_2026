@@ -4,7 +4,7 @@ from typing import Dict, Any, Optional
 
 from hgnc_gene_data_collector import settings
 from hgnc_gene_data_collector.models.data_search import search_gene
-from hgnc_gene_data_collector.models.txt_to_dict import convert_txt_to_dict
+from hgnc_gene_data_collector.models.txt_to_dict import open_file , convert_txt_to_dict
 from hgnc_gene_data_collector.logger import setup_logging
 
 # Application Factory
