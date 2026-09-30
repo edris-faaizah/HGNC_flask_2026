@@ -59,6 +59,7 @@ def convert_txt_to_dict(file_path:str | Path) -> list[dict]:
                 "RefSeq accessions":[] if not row["refseq_accession"] else row["refseq_accession"].split("|"), #added this to try and find mane trasncripts if any
             }
             lightweight_gene_dataset.append(gene_record) # combine all gene record into one dict
-        logger.info("Conversion complete. Lightweight dataset created with %d gene records.", len(lightweight_gene_dataset))
+        logger.info("Conversion complete. Lightweight dataset created with %d gene records.",
+        len(lightweight_gene_dataset))
     return lightweight_gene_dataset    
     #print(lightweight_gene_dataset[10000]) # check the first record to see if it is correct

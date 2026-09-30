@@ -156,7 +156,7 @@ pytest \
     --cov-report=xml
 ```
 
-An interactive HTML covergae report is generated in:
+An interactive HTML coverage report is generated in:
 
 ```text
 htmlcov/index.html
