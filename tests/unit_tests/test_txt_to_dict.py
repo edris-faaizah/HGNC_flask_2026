@@ -104,23 +104,22 @@ def test_required_fields_are_mapped():
 
 
 def test_convert_txt_to_dict_returns_dataset(tmp_path):
- 
+
 test_file = tmp_path / "test.tsv"
- 
 test_file.write_text(
 "symbol\thgnc_id\tname\tprev_symbol\tprev_name\talias_symbol\talias_name\tmane_select\trefseq_accession\n"
 "BRCA2\tHGNC:1101\tBRCA2\t\t\t\t\t\t\n"
 )
- 
+
 result = convert_txt_to_dict(test_file)
- 
+
 assert isinstance(result, list)
 assert len(result) == 1
 assert result[0]["HGNC gene symbol"] == "BRCA2"
 
 
 def test_convert_txt_to_dict_missing_file():
- 
+
 with pytest.raises(FileNotFoundError):
 convert_txt_to_dict("does_not_exist.tsv")
 
