@@ -25,7 +25,7 @@ from hgnc_gene_data_collector.models import convert_txt_to_dict , create_gene_re
 
 def test_create_gene_record():
     """ Test creation of gene record from row """
-    example_row = {
+    row = {
         "symbol": "BRCA2",
         "hgnc_id": "HGNC:1101",
         "name": "BRCA2",
