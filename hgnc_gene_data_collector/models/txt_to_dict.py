@@ -31,21 +31,47 @@ logger = logging.getLogger(__name__)
 import csv
 from pathlib import Path
 
-def convert_txt_to_dict(file_path:str | Path) -> list[dict]:
 
-    logger.info("Starting conversion of text file to dictionary...") 
-    with open(file_path, mode="r", newline="", encoding="utf-8") as csv_file:
-        csv_reader = csv.DictReader(csv_file, delimiter="\t")
-        
-        #if not DATA_FILE.exists():
-           # logger.error("HGNC data file not found at %s", DATA_FILE)
-           # raise FileNotFoundError(f"HGNC data file not found at {DATA_FILE}")
-        
-    
+def create_gene_record(row: dict) -> dict:
+    """
+    Create a lightweight gene record from a HGNC row.
+    """
 
-        lightweight_gene_dataset = [] # dict of all gene records.
-        logger.info("empty Dataset dictionary created, processing each row as gene record...")
-        
+    return {
+        "HGNC gene symbol": row["symbol"] or None,
+        "HGNC ID": row["hgnc_id"] or None,
+        "Gene Name": row["name"] or None,
+        "Previous Gene Symbol": []if not row["prev_symbol"] else row["prev_symbol"].split("|"),
+        "Previous Gene Name": []if not row["prev_name"] else row["prev_name"].split("|"),
+        "Alias Gene Symbol": []if not row["alias_symbol"] else row["alias_symbol"].split("|"),
+        "Alias Gene Name": []if not row["alias_name"] else row["alias_name"].split("|"),
+        "MANE Select transcript": []if not row["mane_select"] else row["mane_select"].split("|"),
+        "RefSeq accessions": []if not row["refseq_accession"] else row["refseq_accession"].split("|"),
+    }
+
+
+def convert_txt_to_dict(file_path: str | Path) -> list[dict]:
+    """
+    Load HGNC TSV file and convert it into a lightweight dataset.
+    """
+
+    logger.info("Starting conversion of text dictionary...")
+    if not file_path:
+        logger.error("No file path provided")
+        raise ValueError("No file path provided")
+
+    if not Path(file_path).exists():
+        logger.error("HGNC data file not found: %s", file_path)
+        raise FileNotFoundError(f"HGNC data file not found: {file_path}")
+
+    lightweight_gene_dataset = []
+
+    with open(file_path, mode="r",newline="",encoding="utf-8") as csv_file:
+
+        csv_reader = csv.DictReader(csv_file,delimiter="\t")
+
+        logger.info("Empty dataset created, processing each row as a gene record...")
+
         for row in csv_reader:
             gene_record = { #to limit each gene with only record i am interested in
                 "HGNC gene symbol":row["symbol"] or None, #because single value, can be empty
@@ -63,3 +89,12 @@ def convert_txt_to_dict(file_path:str | Path) -> list[dict]:
         len(lightweight_gene_dataset))
     return lightweight_gene_dataset    
     #print(lightweight_gene_dataset[10000]) # check the first record to see if it is correct
+            gene_record = create_gene_record(row)
+            lightweight_gene_dataset.append(gene_record)
+
+    if not lightweight_gene_dataset:
+        logger.warning("Dataset loaded but contains no records")
+
+    logger.info("Conversion complete. Lightweight dataset created with %d gene records.",len(lightweight_gene_dataset))
+
+    return lightweight_gene_dataset

@@ -1,0 +1,494 @@
+2026-10-08 09:54:37,303 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:54:37,303 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:54:37,303 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:37,303 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:54:38,088 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:54:38,089 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:54:38,105 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:54:38,113 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:54:38,115 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: 
+2026-10-08 09:54:38,115 | WARNING | hgnc_gene_data_collector.app | app.py:62 | Empty search query received
+2026-10-08 09:54:38,117 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: FAKEGENE
+2026-10-08 09:54:38,117 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: FAKEGENE
+2026-10-08 09:54:38,124 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: FAKEGENE
+2026-10-08 09:54:38,124 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: FAKEGENE
+2026-10-08 09:54:38,126 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: ABC1
+2026-10-08 09:54:38,126 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:54:38,132 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC1
+2026-10-08 09:54:38,133 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: ABC1
+2026-10-08 09:54:38,158 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: HGNC:1
+2026-10-08 09:54:38,158 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:54:38,164 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:37 | No gene record found for HGNC ID: HGNC:1
+2026-10-08 09:54:38,165 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: HGNC:1
+2026-10-08 09:54:38,171 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:38,171 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:54:38,171 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:54:38,171 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:54:38,171 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:54:38,173 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:38,173 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:54:38,173 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:54:38,173 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:54:38,173 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:54:38,175 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:38,175 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:54:38,175 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:54:38,175 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$
+2026-10-08 09:54:38,177 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:54:38,177 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:54:38,178 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:54:38,178 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:54:38,179 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0002
+2026-10-08 09:54:38,179 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0002
+2026-10-08 09:54:38,179 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0003
+2026-10-08 09:54:38,179 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0003
+2026-10-08 09:54:38,180 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:54:38,180 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:54:38,181 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:54:38,181 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:54:38,181 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:54:38,181 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:54:38,182 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:54:38,182 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:54:38,182 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:54:38,182 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:54:38,183 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: HGNC_0001
+2026-10-08 09:54:38,184 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$$
+2026-10-08 09:54:38,185 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC99
+2026-10-08 09:54:38,185 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC99
+2026-10-08 09:54:38,190 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:38,190 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:54:38,190 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 1 gene records.
+2026-10-08 09:54:38,191 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:38,191 | ERROR | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:64 | HGNC data file not found: does_not_exist.tsv
+2026-10-08 09:54:38,192 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:54:38,193 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:54:38,193 | WARNING | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:89 | Dataset loaded but contains no records
+2026-10-08 09:54:38,193 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 0 gene records.
+2026-10-08 09:55:10,264 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:55:10,264 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:55:10,264 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:10,265 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:55:11,069 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:55:11,069 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:55:11,085 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:55:11,093 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:55:11,095 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: 
+2026-10-08 09:55:11,095 | WARNING | hgnc_gene_data_collector.app | app.py:62 | Empty search query received
+2026-10-08 09:55:11,097 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: FAKEGENE
+2026-10-08 09:55:11,097 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: FAKEGENE
+2026-10-08 09:55:11,104 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: FAKEGENE
+2026-10-08 09:55:11,104 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: FAKEGENE
+2026-10-08 09:55:11,106 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: ABC1
+2026-10-08 09:55:11,107 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:55:11,113 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC1
+2026-10-08 09:55:11,113 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: ABC1
+2026-10-08 09:55:11,141 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: HGNC:1
+2026-10-08 09:55:11,141 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:55:11,147 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:37 | No gene record found for HGNC ID: HGNC:1
+2026-10-08 09:55:11,147 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: HGNC:1
+2026-10-08 09:55:11,154 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:11,154 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:55:11,155 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:55:11,155 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:55:11,155 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:55:11,157 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:11,157 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:55:11,157 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:55:11,157 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:55:11,157 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:55:11,159 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:11,159 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:55:11,159 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:55:11,159 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$
+2026-10-08 09:55:11,160 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:55:11,161 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:55:11,162 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:55:11,162 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:55:11,163 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0002
+2026-10-08 09:55:11,163 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0002
+2026-10-08 09:55:11,163 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0003
+2026-10-08 09:55:11,163 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0003
+2026-10-08 09:55:11,164 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:55:11,164 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:55:11,165 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:55:11,165 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:55:11,165 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:55:11,165 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:55:11,166 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:55:11,166 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:55:11,166 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:55:11,166 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:55:11,167 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: HGNC_0001
+2026-10-08 09:55:11,168 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$$
+2026-10-08 09:55:11,169 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC99
+2026-10-08 09:55:11,169 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC99
+2026-10-08 09:55:11,175 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:11,175 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:55:11,175 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 1 gene records.
+2026-10-08 09:55:11,176 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:11,176 | ERROR | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:64 | HGNC data file not found: does_not_exist.tsv
+2026-10-08 09:55:11,177 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:55:11,177 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:55:11,178 | WARNING | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:89 | Dataset loaded but contains no records
+2026-10-08 09:55:11,178 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 0 gene records.
+2026-10-08 09:57:08,010 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:57:08,010 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:57:08,010 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,010 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:57:08,803 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:57:08,804 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:57:08,865 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,865 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:57:08,865 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:57:08,865 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:57:08,866 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:57:08,867 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,868 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:57:08,868 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:57:08,868 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:57:08,868 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:57:08,870 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,870 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:57:08,870 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:57:08,870 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$
+2026-10-08 09:57:08,872 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:57:08,872 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:57:08,874 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:57:08,874 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:57:08,875 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0002
+2026-10-08 09:57:08,875 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0002
+2026-10-08 09:57:08,875 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0003
+2026-10-08 09:57:08,875 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0003
+2026-10-08 09:57:08,877 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:57:08,877 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:57:08,878 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:57:08,878 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:57:08,878 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:57:08,878 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:57:08,880 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:57:08,880 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:57:08,880 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:57:08,880 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:57:08,881 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: HGNC_0001
+2026-10-08 09:57:08,882 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$$
+2026-10-08 09:57:08,884 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC99
+2026-10-08 09:57:08,884 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC99
+2026-10-08 09:57:08,889 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,889 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:57:08,890 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 1 gene records.
+2026-10-08 09:57:08,891 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,891 | ERROR | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:64 | HGNC data file not found: does_not_exist.tsv
+2026-10-08 09:57:08,893 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:57:08,893 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:57:08,893 | WARNING | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:89 | Dataset loaded but contains no records
+2026-10-08 09:57:08,893 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 0 gene records.
+2026-10-08 09:58:12,490 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:12,490 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:12,491 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:12,491 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:13,247 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:13,247 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:13,259 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:13,259 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:13,259 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:13,259 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:14,283 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:14,283 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:14,311 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:58:14,318 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:14,318 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:14,318 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:14,318 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:15,197 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:15,197 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:15,224 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:58:15,229 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:15,229 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:15,229 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:15,229 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:16,164 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:16,164 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:16,190 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: 
+2026-10-08 09:58:16,191 | WARNING | hgnc_gene_data_collector.app | app.py:62 | Empty search query received
+2026-10-08 09:58:16,195 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:16,195 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:16,195 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:16,195 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:17,077 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:17,077 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:17,104 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: FAKEGENE
+2026-10-08 09:58:17,104 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: FAKEGENE
+2026-10-08 09:58:17,104 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: FAKEGENE
+2026-10-08 09:58:17,104 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: FAKEGENE
+2026-10-08 09:58:17,109 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:17,109 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:17,109 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:17,109 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:17,978 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:17,978 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:18,005 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: ABC1
+2026-10-08 09:58:18,005 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:58:18,005 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:58:18,005 | INFO | hgnc_gene_data_collector.app | app.py:78 | Info found for: ABC1
+2026-10-08 09:58:18,010 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:18,010 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:18,010 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,010 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:18,853 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:18,853 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:18,879 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: HGNC:1
+2026-10-08 09:58:18,879 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:58:18,880 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:58:18,880 | INFO | hgnc_gene_data_collector.app | app.py:78 | Info found for: HGNC:1
+2026-10-08 09:58:18,885 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,886 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:18,886 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:58:18,886 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:58:18,886 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:58:18,887 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,888 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:18,888 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:58:18,888 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:18,888 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:18,889 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,889 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:18,890 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:58:18,890 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$
+2026-10-08 09:58:18,891 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:58:18,891 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:58:18,892 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:18,893 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:18,894 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0002
+2026-10-08 09:58:18,894 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0002
+2026-10-08 09:58:18,894 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0003
+2026-10-08 09:58:18,894 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0003
+2026-10-08 09:58:18,895 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:58:18,895 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:58:18,896 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:58:18,896 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:58:18,896 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:18,896 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:18,897 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:58:18,898 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:58:18,898 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:18,898 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:18,899 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: HGNC_0001
+2026-10-08 09:58:18,900 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$$
+2026-10-08 09:58:18,901 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC99
+2026-10-08 09:58:18,901 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC99
+2026-10-08 09:58:18,906 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,906 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:18,906 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 1 gene records.
+2026-10-08 09:58:18,907 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,908 | ERROR | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:64 | HGNC data file not found: does_not_exist.tsv
+2026-10-08 09:58:18,909 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:18,909 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:18,909 | WARNING | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:89 | Dataset loaded but contains no records
+2026-10-08 09:58:18,909 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 0 gene records.
+2026-10-08 09:58:42,976 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:42,976 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:42,976 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:42,977 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:43,915 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:43,915 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:43,943 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:43,943 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:43,943 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:43,943 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:44,951 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:44,951 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:44,987 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:58:45,018 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:45,018 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:45,018 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:45,018 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:46,148 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:46,149 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:46,182 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 09:58:46,195 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:46,196 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:46,196 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:46,196 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:47,423 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:47,424 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:47,452 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: 
+2026-10-08 09:58:47,452 | WARNING | hgnc_gene_data_collector.app | app.py:62 | Empty search query received
+2026-10-08 09:58:47,461 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:47,461 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:47,461 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:47,461 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:48,523 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:48,523 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:48,551 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: FAKEGENE
+2026-10-08 09:58:48,552 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: FAKEGENE
+2026-10-08 09:58:48,552 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: FAKEGENE
+2026-10-08 09:58:48,552 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: FAKEGENE
+2026-10-08 09:58:48,561 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:48,561 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:48,561 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:48,561 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:49,603 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:49,603 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:49,632 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: ABC1
+2026-10-08 09:58:49,632 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:58:49,632 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:58:49,632 | INFO | hgnc_gene_data_collector.app | app.py:78 | Info found for: ABC1
+2026-10-08 09:58:49,641 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 09:58:49,641 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 09:58:49,642 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:49,642 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:50,776 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 09:58:50,776 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 09:58:50,805 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: HGNC:1
+2026-10-08 09:58:50,805 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:58:50,805 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:58:50,805 | INFO | hgnc_gene_data_collector.app | app.py:78 | Info found for: HGNC:1
+2026-10-08 09:58:50,817 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:50,817 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:50,817 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:58:50,818 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 09:58:50,818 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 09:58:50,821 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:50,821 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:50,821 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:58:50,821 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:50,821 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:50,824 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:50,824 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:50,825 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 09:58:50,825 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$
+2026-10-08 09:58:50,828 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:58:50,828 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:58:50,830 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:50,831 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:50,833 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0002
+2026-10-08 09:58:50,833 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0002
+2026-10-08 09:58:50,833 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0003
+2026-10-08 09:58:50,833 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0003
+2026-10-08 09:58:50,835 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 09:58:50,835 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 09:58:50,837 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:58:50,837 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:58:50,838 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:50,838 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:50,840 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 09:58:50,840 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 09:58:50,840 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 09:58:50,840 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 09:58:50,844 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: HGNC_0001
+2026-10-08 09:58:50,847 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$$
+2026-10-08 09:58:50,849 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC99
+2026-10-08 09:58:50,849 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC99
+2026-10-08 09:58:50,860 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:50,860 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:50,861 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 1 gene records.
+2026-10-08 09:58:50,863 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:50,863 | ERROR | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:64 | HGNC data file not found: does_not_exist.tsv
+2026-10-08 09:58:50,866 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 09:58:50,867 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 09:58:50,867 | WARNING | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:89 | Dataset loaded but contains no records
+2026-10-08 09:58:50,867 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 0 gene records.
+2026-10-08 10:01:48,539 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:48,539 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:48,539 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:48,540 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:49,470 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:49,470 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:49,498 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:49,499 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:49,499 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:49,499 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:50,702 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:50,703 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:50,739 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 10:01:50,768 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:50,768 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:50,768 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:50,769 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:51,863 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:51,863 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:51,892 | DEBUG | hgnc_gene_data_collector.app | app.py:49 | Rendering homepage
+2026-10-08 10:01:51,902 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:51,903 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:51,903 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:51,903 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:52,941 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:52,941 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:52,970 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: 
+2026-10-08 10:01:52,970 | WARNING | hgnc_gene_data_collector.app | app.py:62 | Empty search query received
+2026-10-08 10:01:52,978 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:52,979 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:52,979 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:52,979 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:54,046 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:54,047 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:54,074 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: FAKEGENE
+2026-10-08 10:01:54,074 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: FAKEGENE
+2026-10-08 10:01:54,074 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: FAKEGENE
+2026-10-08 10:01:54,074 | INFO | hgnc_gene_data_collector.app | app.py:72 | No results found for query: FAKEGENE
+2026-10-08 10:01:54,083 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:54,083 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:54,083 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:54,083 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:55,120 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:55,120 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:55,148 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: ABC1
+2026-10-08 10:01:55,148 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 10:01:55,148 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 10:01:55,148 | INFO | hgnc_gene_data_collector.app | app.py:78 | Info found for: ABC1
+2026-10-08 10:01:55,157 | INFO | hgnc_gene_data_collector.app | app.py:25 | Initialising Flask application via factory
+2026-10-08 10:01:55,157 | INFO | hgnc_gene_data_collector.app | app.py:29 | Loading data from /home/ubuntu/repos/HGNC_flask_2026/hgnc_data/hgnc_complete_set.txt
+2026-10-08 10:01:55,158 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:55,158 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:56,199 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 45040 gene records.
+2026-10-08 10:01:56,199 | INFO | hgnc_gene_data_collector.app | app.py:35 | Data loaded successfully
+2026-10-08 10:01:56,227 | DEBUG | hgnc_gene_data_collector.app | app.py:59 | Received search query: HGNC:1
+2026-10-08 10:01:56,227 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 10:01:56,227 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 10:01:56,227 | INFO | hgnc_gene_data_collector.app | app.py:78 | Info found for: HGNC:1
+2026-10-08 10:01:56,239 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:56,239 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:56,239 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 10:01:56,240 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:1
+2026-10-08 10:01:56,240 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:1
+2026-10-08 10:01:56,243 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:56,243 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:56,243 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 10:01:56,243 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 10:01:56,244 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 10:01:56,246 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:56,247 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:56,247 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 5 gene records.
+2026-10-08 10:01:56,247 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$
+2026-10-08 10:01:56,250 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 10:01:56,251 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 10:01:56,253 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 10:01:56,253 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 10:01:56,255 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0002
+2026-10-08 10:01:56,256 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0002
+2026-10-08 10:01:56,256 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0003
+2026-10-08 10:01:56,256 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0003
+2026-10-08 10:01:56,258 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC1
+2026-10-08 10:01:56,258 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC1
+2026-10-08 10:01:56,260 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 10:01:56,260 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 10:01:56,260 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 10:01:56,261 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 10:01:56,263 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:29 | Searching for HGNC ID: HGNC:0001
+2026-10-08 10:01:56,263 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:33 | Gene record found for HGNC ID: HGNC:0001
+2026-10-08 10:01:56,263 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC3
+2026-10-08 10:01:56,263 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:50 | Gene record found for symbol: ABC3
+2026-10-08 10:01:56,265 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: HGNC_0001
+2026-10-08 10:01:56,267 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:72 | Invalid input format: $$$$
+2026-10-08 10:01:56,269 | INFO | hgnc_gene_data_collector.models.data_search | data_search.py:46 | Searching for gene symbol: ABC99
+2026-10-08 10:01:56,270 | WARNING | hgnc_gene_data_collector.models.data_search | data_search.py:54 | No gene record found for symbol: ABC99
+2026-10-08 10:01:56,280 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:56,280 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:56,281 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 1 gene records.
+2026-10-08 10:01:56,283 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:56,283 | ERROR | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:64 | HGNC data file not found: does_not_exist.tsv
+2026-10-08 10:01:56,286 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:58 | Starting conversion of text dictionary...
+2026-10-08 10:01:56,287 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:80 | Empty dataset created, processing each row as a gene record...
+2026-10-08 10:01:56,287 | WARNING | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:89 | Dataset loaded but contains no records
+2026-10-08 10:01:56,287 | INFO | hgnc_gene_data_collector.models.txt_to_dict | txt_to_dict.py:91 | Conversion complete. Lightweight dataset created with 0 gene records.

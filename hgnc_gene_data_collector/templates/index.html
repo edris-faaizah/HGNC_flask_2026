@@ -13,7 +13,7 @@
         <h1 style="text-align:center">HGNC gene</h1>
         <form action="{{ url_for('search') }}" method="post">
             
-            <label for="query">Gene or HGNC ID:</label>
+            <label for="query">Gene or HGNC ID(if HGNC ID, use format "HGNC:___"):</label>
             <input type="text" name="query" placeholder="" required>
             <br><br>
             

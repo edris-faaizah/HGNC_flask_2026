@@ -9,14 +9,24 @@ Logging configuration for the HGNC Gene Data Collector (Defensive version?).
 import os
 from pathlib import Path
 
+"""
+this didnt work: wanted the log inside my repo, but this makes
+handler log in /home/ubuntu/.hgnc_gene_data_collector.log
 # Step 1: DEfine default log file
-home_dir = os.path.expanduser("~")
+home_dir = os.path.expanduser("~/repos/HGNC_flask_2026")
 DEFAULT_LOG = os.path.join(home_dir, ".hgnc_gene_data_collector.log")
 
 LOG_FILE = DEFAULT_LOG
 
 # Step 2: Normalise path (defensiuve step)
 LOG_FILE = os.path.abspath(os.path.expanduser(LOG_FILE))
+"""
+
+# HGNC_flask_2026/
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+# HGNC_flask_2026/hgnc_gene_data_collector.log
+LOG_FILE = PROJECT_ROOT / "hgnc_gene_data_collector.log"
 
 # Step 3: ENsure directory exists
 log_dir = os.path.dirname(LOG_FILE)
