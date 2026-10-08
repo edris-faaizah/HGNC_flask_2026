@@ -27,7 +27,16 @@
             {% endif %}
 
             {% if output_text_2 %}
-                <pre>{{ output_text_2 | tojson(indent=2) }}</pre>
+                <h2>{{ output_text_2["HGNC gene symbol"] }}</h2>
+                    <p><strong>HGNC ID:</strong> {{ output_text_2["HGNC ID"] }}</p>
+                    <p><strong>Gene Name:</strong> {{ output_text_2["Gene Name"] }}</p>
+                    <p><strong>Previous Gene Symbol:</strong> {{ output_text_2["Previous Gene Symbol"] | join(", ") }}</p>
+                    <p><strong>Previous Gene Name:</strong> {{ output_text_2["Previous Gene Name"] | join(", ") }}</p>
+                    <p><strong>Alias Gene Symbol:</strong> {{ output_text_2["Alias Gene Symbol"] | join(", ") }}</p>
+                    <p><strong>Alias Gene Name:</strong> {{ output_text_2["Alias Gene Name"] | join(", ") }}</p>
+                    <p><strong>MANE Select Transcript:</strong> {{ output_text_2["MANE Select transcript"] | join(", ") }}</p>
+                    <p><strong>RefSeq Accessions:</strong> {{ output_text_2["RefSeq accessions"] | join(", ") }}</p>
+
             {% endif %}
     </div>
 </body>
