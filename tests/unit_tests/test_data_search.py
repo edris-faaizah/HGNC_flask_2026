@@ -75,6 +75,7 @@ def test_search_gene_lowercase_input(sample_dataset):
     test_input_01 = "hgnc:0001"
     test_input_result_01 = search_gene(test_input_01, sample_dataset)
     assert test_input_result_01["MANE Select transcript"] == ["NM_001234.5"]
+    
     test_input_02 = "abc3"
     test_input_result_02 = search_gene(test_input_02, sample_dataset)
     assert test_input_result_02["Gene Name"] == "ABC3"
@@ -85,6 +86,7 @@ def test_search_gene_removes_space(sample_dataset):
     test_input_01 = " hgnc:0001 "
     test_input_result_01 = search_gene(test_input_01, sample_dataset)
     assert test_input_result_01["MANE Select transcript"] == ["NM_001234.5"]
+    
     test_input_02 = "abc 3"
     test_input_result_02 = search_gene(test_input_02, sample_dataset)
     assert test_input_result_02["Gene Name"] == "ABC3"

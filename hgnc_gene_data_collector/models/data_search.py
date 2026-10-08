@@ -21,10 +21,7 @@ logger = logging.getLogger(__name__)
 
 
 
-def search_by_ID(
-    gene_id: str,
-    lightweight_gene_dataset: list[dict[str, Any]],
-) -> Optional[dict[str, Any]]:
+def search_by_ID(gene_id: str,lightweight_gene_dataset: list[dict[str, Any]],) -> Optional[dict[str, Any]]:
     """Search for a gene record by HGNC ID."""
     logger.info("Searching for HGNC ID: %s", gene_id)
 
@@ -38,10 +35,7 @@ def search_by_ID(
     return None
 
 
-def search_by_symbol(
-    gene_symbol: str,
-    lightweight_gene_dataset: list[dict[str, Any]],
-) -> Optional[dict[str, Any]]:
+def search_by_symbol(gene_symbol: str,lightweight_gene_dataset: list[dict[str, Any]]) -> Optional[dict[str, Any]]:
     """Search for a gene record by gene symbol."""
     logger.info("Searching for gene symbol: %s", gene_symbol)
 
@@ -55,14 +49,10 @@ def search_by_symbol(
     return None
 
 
-def search_gene(
-    request_input: str,
-    dataset: list[dict[str, Any]],
-) -> Optional[dict[str, Any]]:
+def search_gene(request_input: str,dataset: list[dict[str, Any]]) -> Optional[dict[str, Any]]:
     """Search by HGNC ID or gene symbol."""
     request_input = "".join(request_input.strip().split()).upper()
 
-#not the best filter but works so far, can improve
     if request_input.startswith("HGNC:"):
         return search_by_ID(request_input, dataset)
 

@@ -62,24 +62,15 @@ def convert_txt_to_dict(file_path: str | Path) -> list[dict]:
 
     if not Path(file_path).exists():
         logger.error("HGNC data file not found: %s", file_path)
-        raise FileNotFoundError(
-            f"HGNC data file not found: {file_path}"
-        )
+        raise FileNotFoundError(f"HGNC data file not found: {file_path}")
 
     lightweight_gene_dataset = []
 
-    with open(file_path, mode="r",
-              newline="",
-              encoding="utf-8") as csv_file:
+    with open(file_path, mode="r",newline="",encoding="utf-8") as csv_file:
 
-        csv_reader = csv.DictReader(
-            csv_file,
-            delimiter="\t"
-        )
+        csv_reader = csv.DictReader(csv_file,delimiter="\t")
 
-        logger.info(
-            "Empty dataset created, processing each row as a gene record..."
-        )
+        logger.info("Empty dataset created, processing each row as a gene record...")
 
         for row in csv_reader:
             gene_record = create_gene_record(row)
@@ -88,9 +79,6 @@ def convert_txt_to_dict(file_path: str | Path) -> list[dict]:
     if not lightweight_gene_dataset:
         logger.warning("Dataset loaded but contains no records")
 
-    logger.info(
-        "Conversion complete. Lightweight dataset created with %d gene records.",
-        len(lightweight_gene_dataset),
-    )
+    logger.info("Conversion complete. Lightweight dataset created with %d gene records.",len(lightweight_gene_dataset))
 
     return lightweight_gene_dataset

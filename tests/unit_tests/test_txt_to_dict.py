@@ -1,17 +1,3 @@
-"""
-- file path not found?
-- file not found?
-- no gene record?
-- no symbol/ hgnc id/name/prev symbol/prev name/alias symbol/
-alias name/maneselect/refseq accession
-- len(gene record) not 9?
-
-
-File exists?
-File missing?
-TSV readable?
-"""
-
 import pytest
 from pathlib import Path
 from typing import List, Dict
@@ -132,7 +118,7 @@ def test_convert_txt_to_dict_empty_file(tmp_path):
 
 
 """
-add these tests
+add these tests??
 
 
 test_missing_file_raises_filenotfounderror
