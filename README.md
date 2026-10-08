@@ -93,8 +93,12 @@ Browser
 ## Installation
 
 This project uses a fully controlled and reproducible Conda environment
+Please install and initialise miniconda if you do not already have it in your computer/laptop.
+Link to download: https://www.anaconda.com/download
+
 
 ### 1. Create the Conda environment
+May require additional steps to accept term and conditions, follow terminal prompt
 
 ```bash
 conda env create -f environment.yml
