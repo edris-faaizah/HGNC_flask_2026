@@ -136,7 +136,7 @@ python hgnc_gene_data_collector/app.py
 
 The application will be available at:
 ```text
-http:// (find out the url)
+http://172.16.214.144:5000
 ```
 
 ---
