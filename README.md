@@ -65,7 +65,6 @@ sha256sum hgnc_complete_set.txt
 ```
 
 If the dataset filename changes, update the `DATA_FILE` setting in `settings.py` accordingly.
-!!!provide info if using more than one dataset, what to do!!!
 
 ---
 

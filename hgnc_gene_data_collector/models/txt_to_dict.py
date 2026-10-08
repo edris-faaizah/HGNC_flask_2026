@@ -55,23 +55,42 @@ def convert_txt_to_dict(file_path: str | Path) -> list[dict]:
     Load HGNC TSV file and convert it into a lightweight dataset.
     """
 
-    logger.info("Starting conversion of text ionary...")
+    logger.info("Starting conversion of text dictionary...")
+    if not file_path:
+        logger.error("No file path provided")
+        raise ValueError("No file path provided")
+
+    if not Path(file_path).exists():
+        logger.error("HGNC data file not found: %s", file_path)
+        raise FileNotFoundError(
+            f"HGNC data file not found: {file_path}"
+        )
 
     lightweight_gene_dataset = []
 
-    with open(file_path, mode="r", newline="", encoding="utf-8") as csv_file:
+    with open(file_path, mode="r",
+              newline="",
+              encoding="utf-8") as csv_file:
 
-        csv_reader = csv.DictReader(csv_file, delimiter="\t")
+        csv_reader = csv.DictReader(
+            csv_file,
+            delimiter="\t"
+        )
 
         logger.info(
-            "Empty dataset created, processing each row as a gene record...")
+            "Empty dataset created, processing each row as a gene record..."
+        )
 
         for row in csv_reader:
             gene_record = create_gene_record(row)
             lightweight_gene_dataset.append(gene_record)
 
+    if not lightweight_gene_dataset:
+        logger.warning("Dataset loaded but contains no records")
+
     logger.info(
         "Conversion complete. Lightweight dataset created with %d gene records.",
-        len(lightweight_gene_dataset),)
+        len(lightweight_gene_dataset),
+    )
 
     return lightweight_gene_dataset

@@ -1,32 +1,4 @@
 """
-search_id
-- spaces
-- gene_id in str format only? (how many numbers?)
-- letters inside?
-- no geneid record?
-
-
-search_symbol
-- all caps
-- all small caps
-- spaces
-- input fakegene
-- all numbers?
-
-search_gene
-- HGNC:1101ID search works
-- BRCA2Symbol search work
-- br afFinds BRAF
-- @@@@Invalid input
-- ""Invalid input
-
-valid HGNC symbol
-✓ valid HGNC ID
-✓ gene not found
-✓ invalid input
-✓ empty string
-✓ whitespace input
-
 
 •	a valid HGNC-approved gene symbol is entered;
 •	a valid HGNC ID is entered;
@@ -72,50 +44,49 @@ def sample_dataset():
 def test_search_by_ID_happy(sample_dataset):
 
     test_gene_id = "HGNC:0001"
-    test_result_happy = search_by_ID(test_gene_id, test_dataset)
+    test_result_happy = search_by_ID(test_gene_id, sample_dataset)
     assert test_result_happy["HGNC gene symbol"] == "ABC1"
 
 
 def test_search_by_symbol_happy(sample_dataset):
 
     test_gene_symbol = "ABC3"
-    test_result_happy = search_by_symbol(test_gene_symbol, test_dataset)
+    test_result_happy = search_by_symbol(test_gene_symbol, sample_dataset)
     assert test_result_happy["HGNC ID"] == "HGNC:0003"
 
 
 def test_search_gene_use_ID(sample_dataset):
 
-    test_input_01 = "0002"
-    test_input_result_01 = search_gene(test_input_01, test_dataset)
+    test_input_01 = "HGNC:0002"
+    test_input_result_01 = search_gene(test_input_01, sample_dataset)
     assert test_input_result_01["MANE Select transcript"] == []
     
     test_input_02 = "HGNC:0003"
-    test_input_result_02 = search_gene(test_input_02, test_dataset)
-    assert test_input_result_02["MANE Select transcript"] == "NM_002345.6"
+    test_input_result_02 = search_gene(test_input_02, sample_dataset)
+    assert test_input_result_02["MANE Select transcript"] == ["NM_002345.6"]
 
 def test_search_gene_use_symbol(sample_dataset):
 
     test_input = "ABC1"
-    test_input_result = search_gene(test_input, test_dataset)
-    assert test_input_result["MANE Select transcript"] == "NM_001234.5"
+    test_input_result = search_gene(test_input, sample_dataset)
+    assert test_input_result["MANE Select transcript"] == ["NM_001234.5"]
 
- def test_search_gene_lowercase_input(sample_dataset):
-
+def test_search_gene_lowercase_input(sample_dataset):
     test_input_01 = "hgnc:0001"
-    test_input_result_01 = search_gene(test_input_01, test_dataset)
-    assert test_input_result_01["MANE Select transcript"] == "NM_001234.5"
+    test_input_result_01 = search_gene(test_input_01, sample_dataset)
+    assert test_input_result_01["MANE Select transcript"] == ["NM_001234.5"]
     test_input_02 = "abc3"
-    test_input_result_02 = search_gene(test_input_02, test_dataset)
+    test_input_result_02 = search_gene(test_input_02, sample_dataset)
     assert test_input_result_02["Gene Name"] == "ABC3"
 
 
- def test_search_gene_removes_space(sample_dataset):
+def test_search_gene_removes_space(sample_dataset):
 
     test_input_01 = " hgnc:0001 "
-    test_input_result_01 = search_gene(test_input_01, test_dataset)
-    assert test_input_result_01["MANE Select transcript"] == "NM_001234.5"
+    test_input_result_01 = search_gene(test_input_01, sample_dataset)
+    assert test_input_result_01["MANE Select transcript"] == ["NM_001234.5"]
     test_input_02 = "abc 3"
-    test_input_result_02 = search_gene(test_input_02, test_dataset)
+    test_input_result_02 = search_gene(test_input_02, sample_dataset)
     assert test_input_result_02["Gene Name"] == "ABC3"
 
 

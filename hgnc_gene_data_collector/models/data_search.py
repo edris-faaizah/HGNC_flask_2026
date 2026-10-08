@@ -62,6 +62,7 @@ def search_gene(
     """Search by HGNC ID or gene symbol."""
     request_input = "".join(request_input.strip().split()).upper()
 
+#not the best filter but works so far, can improve
     if request_input.startswith("HGNC:"):
         return search_by_ID(request_input, dataset)
 
