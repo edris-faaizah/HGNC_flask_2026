@@ -30,7 +30,7 @@ def create_app() -> Flask:
 
     try:
         # Store data inside app config to avoid global state
-        # ✅ This is important for testing and flexibility
+        # This is important for testing and flexibility
         app.config["DATA"] = convert_txt_to_dict(DATA_FILE)           #recheck this
         logger.info("Data loaded successfully")
 
@@ -110,4 +110,5 @@ app: Flask = create_app()
 # -------------------------------------------------------------------
 if __name__ == "__main__":
     logging.getLogger(__name__).info("Running Flask app")
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
+    #change port to 8000 for docker..?
