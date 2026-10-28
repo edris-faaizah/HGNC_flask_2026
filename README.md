@@ -136,7 +136,7 @@ python hgnc_gene_data_collector/app.py
 
 The application will be available at:
 ```text
-http://172.16.214.144:5000
+http://127.0.0.1:8000
 ```
 
 ---
@@ -180,6 +180,42 @@ conda deactivate
 ```
 
 ---
+---
+## Running the application
+
+(remmeber to add instructions to run the app)
+
+
+
+---
+
+## Running with Docker
+
+Another way to run the app without any installation into your device is to run using Docker.
+Ensure Docker is installed in your device. Follow https://docs.docker.com/get-started/get-docker/
+
+clone repo into your device using
+
+```bash
+git clone https://github.com/edris-faaizah/HGNC_flask_2026
+```
+Setting the project root as your current working directory ie ~/HGNC_flask_2026, ensure there is a Dockerfile in Project root.
+build the docker image for this app:
+
+```bash
+docker build -t hgncgenedata .
+```
+Once successful, run the application:
+
+```bash
+docker run -it --rm -p 8000:8000 HGNCgenedata
+```
+
+Open the app in a web browser using link:
+
+http://localhost:8000
+
+
 
 ## Notes on reproducibility
 
